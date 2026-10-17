@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Жавзанпагмагийн responsive зургийн цомог портал">
+
+    <title>Миний Зургийн Цомог | Lab 6</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                📷 My Gallery
+            </a>
+
+            <nav class="navbar" aria-label="Үндсэн цэс">
+                <a href="#home">Нүүр</a>
+                <a href="#gallery">Зургийн цомог</a>
+                <a href="#video">Видео</a>
+                <a href="#about">Миний тухай</a>
+            </nav>
+
+            <button
+                id="themeBtn"
+                class="theme-btn"
+                type="button"
+                aria-label="Dark mode солих">
+                🌙
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main id="home">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">MY DIGITAL GALLERY</p>
+
+                    <h1>
+                        Дурсамж бүр
+                        <span>нэг зураг</span>
+                    </h1>
+
+                    <p>
+                        Миний дуртай зураг, аялал, байгаль болон
+                        өдөр тутмын дурсамжуудаа нэг дор цуглуулсан
+                        зургийн цомог.
+                    </p>
+
+                    <a href="#gallery" class="primary-btn">
+                        Цомгийг үзэх →
+                    </a>
+
+                </div>
+
+                <div class="hero-icon" aria-hidden="true">
+                    📸
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- GALLERY -->
+        <section id="gallery" class="gallery-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">MY COLLECTION</p>
+                        <h2>Зургийн цомог</h2>
+                    </div>
+
+                    <p>
+                        Зураг дээр mouse аваачих эсвэл сонгоход
+                        3D flip эффект ажиллана.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <!-- PHOTO 1 -->
+                    <article class="photo-card" style="--i: 0">
+
+                        <div class="flip-card">
+
+                            <div class="flip-inner">
+
+                                <div class="flip-front">
+
+                                    <img
+                                        src="img/photo1.jpg"
+                                        alt="Байгалийн үзэсгэлэнт зураг"
+                                        loading="lazy">
+
+                                    <div class="photo-info">
+                                        <span>01</span>
+                                        <h3>Байгаль</h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flip-back">
+
+                                    <span class="card-number">01</span>
+
+                                    <h3>Байгаль</h3>
+
+                                    <p>
+                                        Байгалийн тайван орчин,
+                                        цэвэр агаарыг мэдрүүлсэн дурсамж.
+                                    </p>
+
+                                    <button
+                                        class="flip-btn"
+                                        type="button">
+                                        Буцаах
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 2 -->
+                    <article class="photo-card" style="--i: 1">
+
+                        <div class="flip-card">
+
+                            <div class="flip-inner">
+
+                                <div class="flip-front">
+
+                                    <img
+                                        src="img/photo2.jpg"
+                                        alt="Аяллын үеийн зураг"
+                                        loading="lazy">
+
+                                    <div class="photo-info">
+                                        <span>02</span>
+                                        <h3>Аялал</h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flip-back">
+
+                                    <span class="card-number">02</span>
+
+                                    <h3>Аялал</h3>
+
+                                    <p>
+                                        Шинэ газар үзэж,
+                                        шинэ дурсамж бүтээсэн мөч.
+                                    </p>
+
+                                    <button
+                                        class="flip-btn"
+                                        type="button">
+                                        Буцаах
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 3 -->
+                    <article class="photo-card" style="--i: 2">
+
+                        <div class="flip-card">
+
+                            <div class="flip-inner">
+
+                                <div class="flip-front">
+
+                                    <img
+                                        src="img/photo3.jpg"
+                                        alt="Нар жаргаж байгаа зураг"
+                                        loading="lazy">
+
+                                    <div class="photo-info">
+                                        <span>03</span>
+                                        <h3>Sunset</h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flip-back">
+
+                                    <span class="card-number">03</span>
+
+                                    <h3>Sunset</h3>
+
+                                    <p>
+                                        Өдрийн хамгийн гоё мөчүүдийн
+                                        нэг болох нар жаргалт.
+                                    </p>
+
+                                    <button
+                                        class="flip-btn"
+                                        type="button">
+                                        Буцаах
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 4 -->
+                    <article class="photo-card" style="--i: 3">
+
+                        <div class="flip-card">
+
+                            <div class="flip-inner">
+
+                                <div class="flip-front">
+
+                                    <img
+                                        src="img/photo4.jpg"
+                                        alt="Хотын орчны зураг"
+                                        loading="lazy">
+
+                                    <div class="photo-info">
+                                        <span>04</span>
+                                        <h3>Хот</h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flip-back">
+
+                                    <span class="card-number">04</span>
+
+                                    <h3>Хот</h3>
+
+                                    <p>
+                                        Хотын амьдралын эрч хүчийг
+                                        харуулсан зураг.
+                                    </p>
+
+                                    <button
+                                        class="flip-btn"
+                                        type="button">
+                                        Буцаах
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 5 -->
+                    <article class="photo-card" style="--i: 4">
+
+                        <div class="flip-card">
+
+                            <div class="flip-inner">
+
+                                <div class="flip-front">
+
+                                    <img
+                                        src="img/photo5.jpg"
+                                        alt="Цэцэг болон байгалийн зураг"
+                                        loading="lazy">
+
+                                    <div class="photo-info">
+                                        <span>05</span>
+                                        <h3>Flower</h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flip-back">
+
+                                    <span class="card-number">05</span>
+
+                                    <h3>Flower</h3>
+
+                                    <p>
+                                        Өнгө, байгаль, гоо үзэсгэлэнг
+                                        илэрхийлсэн зураг.
+                                    </p>
+
+                                    <button
+                                        class="flip-btn"
+                                        type="button">
+                                        Буцаах
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 6 -->
+                    <article class="photo-card" style="--i: 5">
+
+                        <div class="flip-card">
+
+                            <div class="flip-inner">
+
+                                <div class="flip-front">
+
+                                    <img
+                                        src="img/photo6.jpg"
+                                        alt="Өдөр тутмын дурсамжийн зураг"
+                                        loading="lazy">
+
+                                    <div class="photo-info">
+                                        <span>06</span>
+                                        <h3>Memory</h3>
+                                    </div>
+
+                                </div>
+
+                                <div class="flip-back">
+
+                                    <span class="card-number">06</span>
+
+                                    <h3>Memory</h3>
+
+                                    <p>
+                                        Өдөр тутмын жижигхэн боловч
+                                        үнэ цэнтэй дурсамж.
+                                    </p>
+
+                                    <button
+                                        class="flip-btn"
+                                        type="button">
+                                        Буцаах
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEO -->
+        <section id="video" class="media-section">
+
+            <div class="container media-grid">
+
+                <div class="video-content">
+
+                    <p class="eyebrow">MULTIMEDIA</p>
+
+                    <h2>Дурсамжийг хөдөлгөөнөөр</h2>
+
+                    <p>
+                        Зургийн цомгийн хэсгийг видео контентоор
+                        баяжууллаа.
+                    </p>
+
+                    <div class="video-wrapper">
+
+                        <video
+                            controls
+                            preload="metadata"
+                            poster="img/photo1.jpg">
+
+                            <source
+                                src="video/clip.mp4"
+                                type="video/mp4">
+
+                            <source
+                                src="video/clip.webm"
+                                type="video/webm">
+
+                            <track
+                                src="video/clip.mn.vtt"
+                                kind="subtitles"
+                                srclang="mn"
+                                label="Монгол хэл"
+                                default>
+
+                            Таны browser video тоглуулах боломжгүй байна.
+
+                        </video>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INLINE SVG -->
+                <div class="svg-card">
+
+                    <svg
+                        class="gallery-svg"
+                        viewBox="0 0 300 250"
+                        role="img"
+                        aria-labelledby="svgTitle svgDesc">
+
+                        <title id="svgTitle">
+                            Зургийн аппарат
+                        </title>
+
+                        <desc id="svgDesc">
+                            Камерын дүрсийг SVG ашиглан зурсан.
+                        </desc>
+
+                        <rect
+                            x="35"
+                            y="70"
+                            width="230"
+                            height="130"
+                            rx="25"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="8"/>
+
+                        <circle
+                            cx="150"
+                            cy="135"
+                            r="45"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="8"/>
+
+                        <circle
+                            cx="150"
+                            cy="135"
+                            r="15"
+                            fill="currentColor"/>
+
+                        <rect
+                            x="100"
+                            y="40"
+                            width="100"
+                            height="35"
+                            rx="10"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="8"/>
+
+                    </svg>
+
+                    <h3>Creative Memories</h3>
+
+                    <p>
+                        CSS болон SVG ашиглан multimedia
+                        хэсгийг илүү сонирхолтой болголоо.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="about-section">
+
+            <div class="container about-card">
+
+                <div>
+
+                    <p class="eyebrow">ABOUT ME</p>
+
+                    <h2>Ж.Жавзанпагма</h2>
+
+                    <p>
+                        Computer Science чиглэлээр суралцдаг
+                        2-р курсын оюутан. Веб хөгжүүлэлт,
+                        дизайн болон шинэ технологи сонирхдог.
+                    </p>
+
+                </div>
+
+                <div class="skills">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Responsive</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 My Gallery — Lab 6
+            </p>
+
+            <p>
+                HTML • CSS • JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
